@@ -1,4 +1,4 @@
-P2Uuid v0.1.0
+P2Uuid v0.1.1
 =============
 
 A simple wrapper of [ramsey/uuid](https://github.com/ramsey/uuid) as helpers for Yii 2 Framework.
@@ -29,5 +29,5 @@ Usage
 Once the extension is installed, simply use it in your code by  :
 
 ```php
-<?= \p2made\uuid\AutoloadExample::widget(); ?>
+use \p2made\uuid\UuidHelpers;
 ```
