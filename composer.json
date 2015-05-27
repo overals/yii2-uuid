@@ -1,0 +1,30 @@
+{
+    "name": "p2made/yii2-uuid",
+    "description": "UUID helpers for Yii 2 Framework.",
+    "type": "yii2-extension",
+    "keywords": [
+        "yii2","extension","uuid"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Pedro Plowman",
+            "email": "p2opensource@gmail.com",
+            "homepage": "https://github.com/p2made"
+        }
+    ],
+
+    "version": "0.1.0",
+    "minimum-stability": "dev",
+
+    "require": {
+        "yiisoft/yii2": "2.0.*",
+        "ircmaxell/random-lib": "*",
+        "ramsey/uuid": "3.0.*@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "p2made\\Uuid\\": ""
+        }
+    }
+}
