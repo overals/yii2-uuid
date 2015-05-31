@@ -14,13 +14,13 @@
         }
     ],
 
-    "version": "1.0.0",
+    "version": "1.0.1",
     "minimum-stability": "dev",
 
     "require": {
         "yiisoft/yii2": "2.0.*",
         "ircmaxell/random-lib": "*",
-        "ramsey/uuid": "3.0.*@dev"
+        "ramsey/uuid": "2.*"
     },
     "autoload": {
         "psr-4": {
