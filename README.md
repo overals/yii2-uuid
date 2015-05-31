@@ -1,4 +1,4 @@
-P2Uuid v0.4.0
+P2Uuid v0.5.0
 =============
 
 A simple wrapper of [ramsey/uuid](https://github.com/ramsey/uuid) as helpers for Yii 2 Framework.
@@ -26,10 +26,12 @@ to the require section of your `composer.json` file.
 Usage
 -----
 
-Once the extension is installed, simply use it in your code by  :
+Once the extension is installed, simply use it in your code by:
+
 
 ```php
-use \p2made\uuid\UuidHelpers;
+	$uuid = \p2made\helpers\Uuid\UuidHelpers::uuid();
+	$uuid = \p2made\helpers\Uuid\UuidHelpers::uuid($subDomain);
 ```
 
 
