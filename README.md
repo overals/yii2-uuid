@@ -1,4 +1,4 @@
-P2Uuid v0.5.0
+P2Uuid v1.0.0
 =============
 
 A simple wrapper of [ramsey/uuid](https://github.com/ramsey/uuid) as helpers for Yii 2 Framework.

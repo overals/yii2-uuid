@@ -99,6 +99,6 @@ class UuidHelpers
 			$_reverseDomain = 'com.example.no.reverse.domain.set';
 		}
 
-		return $_useCdn;
+		return $_reverseDomain;
 	}
 }
