@@ -1,26 +1,17 @@
 {
     "name": "p2made/yii2-uuid",
-<<<<<<< HEAD
     "description": "A PHP 5.3+ library for generating RFC 4122 version 1, 3, 4, and 5 universally unique identifiers (UUID), wrapped as helpers for Yii 2 Framework.",
     "type": "yii2-extension",
     "keywords": [
         "yii2","extension","uuid", "identifier", "guid"
     ],
     "homepage": "https://github.com/p2made/yii2-uuid",
-=======
-    "description": "UUID helpers for Yii 2 Framework.",
-    "type": "yii2-extension",
-    "keywords": [
-        "yii2","extension","uuid"
-    ],
->>>>>>> origin/master
     "license": "MIT",
     "authors": [
         {
             "name": "Pedro Plowman",
             "email": "p2opensource@gmail.com",
             "homepage": "https://github.com/p2made"
-<<<<<<< HEAD
         },
         {
             "name": "Ben Ramsey",
@@ -42,7 +33,7 @@
     "require": {
         "php": ">=5.3.3",
         "yiisoft/yii2": ">=2.0.4",
-        "ircmaxell/random-lib": "*"
+        "ramsey/uuid": "=~2.8"
     },
     "require-dev": {
         "moontoast/math": "~1.1",
@@ -58,18 +49,6 @@
         "moontoast/math": "Support for converting UUID to 128-bit integer (in string form).",
         "symfony/console": "Support for use of the bin/uuid command line tool.",
         "doctrine/dbal": "Allow the use of a UUID as doctrine field type."
-=======
-        }
-    ],
-
-    "version": "1.0.3",
-    "minimum-stability": "dev",
-
-    "require": {
-        "yiisoft/yii2": "2.0.*",
-        "ircmaxell/random-lib": "*",
-        "ramsey/uuid": "dev-master"
->>>>>>> origin/master
     },
     "autoload": {
         "psr-4": {
