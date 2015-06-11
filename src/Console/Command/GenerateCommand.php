@@ -1,27 +1,23 @@
 <?php
 /**
- * This file is part of the Ramsey\Uuid library
+ * This file is part of the Rhumsaa\Uuid library
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  *
- * @copyright Copyright (c) 2012-2014 Ben Ramsey <http://benramsey.com>
+ * @copyright Copyright (c) 2013-2014 Ben Ramsey <http://benramsey.com>
  * @license http://opensource.org/licenses/MIT MIT
  */
 
-namespace Ramsey\Uuid\Console\Command;
+namespace Rhumsaa\Uuid\Console\Command;
 
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
-use Ramsey\Uuid\Console\Exception;
-use Ramsey\Uuid\Uuid;
-use Ramsey\Uuid\Generator\CombGenerator;
-use Ramsey\Uuid\Codec\GuidStringCodec;
-use Ramsey\Uuid\FeatureSet;
-use Ramsey\Uuid\UuidFactory;
+use Rhumsaa\Uuid\Console\Exception;
+use Rhumsaa\Uuid\Uuid;
 
 /**
  * Provides the console command to generate UUIDs
@@ -64,18 +60,6 @@ class GenerateCommand extends Command
                 InputOption::VALUE_REQUIRED,
                 'Generate count UUIDs instead of just a single one.',
                 1
-            )
-            ->addOption(
-                'comb',
-                null,
-                InputOption::VALUE_NONE,
-                'For version 4 UUIDs, uses the COMB strategy to generate the random data.'
-            )
-            ->addOption(
-                'guid',
-                'g',
-                InputOption::VALUE_NONE,
-                'Returns a GUID formatted UUID.'
             );
     }
 
@@ -97,21 +81,6 @@ class GenerateCommand extends Command
                 'min_range' => 1,
             )
         );
-
-        if (((bool) $input->getOption('guid')) == true) {
-            $features = new FeatureSet(true);
-
-            Uuid::setFactory(new UuidFactory($features));
-        }
-
-        if (((bool) $input->getOption('comb')) === true) {
-            Uuid::getFactory()->setRandomGenerator(
-                new CombGenerator(
-                    Uuid::getFactory()->getRandomGenerator(),
-                    Uuid::getFactory()->getNumberConverter()
-                )
-            );
-        }
 
         for ($i = 0; $i < $count; $i++) {
             $uuids[] = $this->createUuid(
@@ -190,11 +159,9 @@ class GenerateCommand extends Command
             return $namespace;
         }
 
-        throw new Exception(
-            'Invalid namespace. '
+        throw new Exception('Invalid namespace. '
             . 'May be either a UUID in string representation or an identifier '
             . 'for internally pre-defined namespace UUIDs (currently known '
-            . 'are "ns:DNS", "ns:URL", "ns:OID", and "ns:X500").'
-        );
+            . 'are "ns:DNS", "ns:URL", "ns:OID", and "ns:X500").');
     }
 }

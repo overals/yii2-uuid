@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Ramsey\Uuid\Console\Util;
+namespace Rhumsaa\Uuid\Console\Util;
 
 use Symfony\Component\Console\Output\Output;
 

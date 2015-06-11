@@ -1,5 +1,5 @@
 <?php
-namespace Ramsey\Uuid;
+namespace Rhumsaa\Uuid;
 
 class TestCase extends \PHPUnit_Framework_TestCase
 {

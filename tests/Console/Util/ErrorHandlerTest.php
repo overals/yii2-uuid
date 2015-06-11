@@ -1,17 +1,17 @@
 <?php
-namespace Ramsey\Uuid\Console\Util;
+namespace Rhumsaa\Uuid\Console\Util;
 
-use Ramsey\Uuid\Console\TestCase;
+use Rhumsaa\Uuid\Console\TestCase;
 
 class ErrorHandlerTest extends TestCase
 {
     /**
-     * @covers Ramsey\Uuid\Console\Util\ErrorHandler::register
+     * @covers Rhumsaa\Uuid\Console\Util\ErrorHandler::register
      */
     public function testRegister()
     {
         $expected = array (
-            'Ramsey\\Uuid\Console\\Util\\ErrorHandler',
+            'Rhumsaa\\Uuid\Console\\Util\\ErrorHandler',
             'handle',
         );
 
@@ -27,7 +27,7 @@ class ErrorHandlerTest extends TestCase
     }
 
     /**
-     * @covers Ramsey\Uuid\Console\Util\ErrorHandler::handle
+     * @covers Rhumsaa\Uuid\Console\Util\ErrorHandler::handle
      * @expectedException ErrorException
      * @expectedExceptionMessage Test exception
      */
@@ -38,7 +38,7 @@ class ErrorHandlerTest extends TestCase
     }
 
     /**
-     * @covers Ramsey\Uuid\Console\Util\ErrorHandler::handle
+     * @covers Rhumsaa\Uuid\Console\Util\ErrorHandler::handle
      */
     public function testHandleNoException()
     {
