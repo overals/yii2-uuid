@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Rhumsaa\Uuid for PHP
 
 [![Build Status](https://travis-ci.org/ramsey/uuid.svg?branch=master)](https://travis-ci.org/ramsey/uuid)
@@ -9,6 +10,24 @@
 ## About
 
 Rhumsaa\Uuid is a PHP 5.3+ library for generating and working with
+=======
+# ramsey/uuid for PHP
+
+[![Join the chat at https://gitter.im/ramsey/uuid](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ramsey/uuid?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
+_NOTICE: Formerly known as `rhumsaa/uuid`, I have changed the package and namespace
+names to `ramsey/uuid` and `Ramsey\Uuid`, respectively._
+
+---
+
+[![Build Status](https://travis-ci.org/ramsey/uuid.svg?branch=master)](https://travis-ci.org/ramsey/uuid)
+[![Coverage Status](https://coveralls.io/repos/ramsey/uuid/badge.svg?branch=master)](https://coveralls.io/r/ramsey/uuid)
+[![Latest Stable Version](https://poser.pugx.org/ramsey/uuid/v/stable)](https://packagist.org/packages/ramsey/uuid) [![Total Downloads](https://poser.pugx.org/ramsey/uuid/downloads)](https://packagist.org/packages/ramsey/uuid) [![Latest Unstable Version](https://poser.pugx.org/ramsey/uuid/v/unstable)](https://packagist.org/packages/ramsey/uuid) [![License](https://poser.pugx.org/ramsey/uuid/license)](https://packagist.org/packages/ramsey/uuid)
+
+## About
+
+ramsey/uuid is a PHP 5.4+ library for generating and working with
+>>>>>>> origin/master
 [RFC 4122][rfc4122] version 1, 3, 4, and 5 universally unique identifiers (UUID).
 
 From [Wikipedia](http://en.wikipedia.org/wiki/Universally_unique_identifier):
@@ -43,7 +62,11 @@ library are recommended. However, this library is designed to work on 32-bit
 builds of PHP without Moontoast\Math, with some degraded functionality. Please
 check the API documentation for more information.
 
+<<<<<<< HEAD
 If a particular requirement is not present, then a `Rhumsaa\Uuid\Exception\UnsatisfiedDependencyException`
+=======
+If a particular requirement is not present, then a `Ramsey\Uuid\Exception\UnsatisfiedDependencyException`
+>>>>>>> origin/master
 is thrown, allowing one to catch a bad call in an environment where the call is
 not supported and gracefully degrade.
 
@@ -53,8 +76,13 @@ not supported and gracefully degrade.
 <?php
 require 'vendor/autoload.php';
 
+<<<<<<< HEAD
 use Rhumsaa\Uuid\Uuid;
 use Rhumsaa\Uuid\Exception\UnsatisfiedDependencyException;
+=======
+use Ramsey\Uuid\Uuid;
+use Ramsey\Uuid\Exception\UnsatisfiedDependencyException;
+>>>>>>> origin/master
 
 try {
 
@@ -90,14 +118,22 @@ the following command to install the package and add it as a requirement to
 `composer.json`:
 
 ```bash
+<<<<<<< HEAD
 composer.phar require "ramsey/uuid=~2.8"
+=======
+composer require ramsey/uuid
+>>>>>>> origin/master
 ```
 
 
 [rfc4122]: http://tools.ietf.org/html/rfc4122
 [javauuid]: http://docs.oracle.com/javase/6/docs/api/java/util/UUID.html
 [pyuuid]: http://docs.python.org/3/library/uuid.html
+<<<<<<< HEAD
 [packagist]: https://packagist.org/packages/rhumsaa/uuid
+=======
+[packagist]: https://packagist.org/packages/ramsey/uuid
+>>>>>>> origin/master
 [composer]: http://getcomposer.org/
 [moontoast\math]: https://github.com/moontoast/math
 [apidocs]: http://ramsey.github.io/uuid/apidocs

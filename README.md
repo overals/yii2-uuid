@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 P2Uuid v2.0.0
 =============
 
 [ramsey/uuid](https://github.com/ramsey/uuid) forked & wrapped as helpers for Yii 2 Framework.
+=======
+P2Uuid v1.0.3
+=============
+
+A simple wrapper of [ramsey/uuid](https://github.com/ramsey/uuid) as helpers for Yii 2 Framework.
+>>>>>>> origin/master
 
 Installation
 ------------
