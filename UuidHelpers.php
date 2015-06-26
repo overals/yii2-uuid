@@ -11,8 +11,8 @@
 namespace p2made\helpers\Uuid;
 
 use yii;
-use Ramsey\Uuid\Uuid;
-use Ramsey\Uuid\Exception\UnsatisfiedDependencyException;
+use Rhumsaa\Uuid\Uuid;
+use Rhumsaa\Uuid\Exception\UnsatisfiedDependencyException;
 
 /*
  * UuidHelpers::p2uuid1()
