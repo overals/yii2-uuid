@@ -1,7 +1,9 @@
-P2Uuid v2.0.5
+P2Uuid v3.0.0
 =============
 
 A simple wrapper of [ramsey/uuid](https://github.com/ramsey/uuid) as helpers for Yii 2 Framework.
+
+Version 3 brings P2Uuid into sync with version 3 of ramsey/uuid.
 
 Installation
 ------------
@@ -28,11 +30,7 @@ Usage
 
 Once the extension is installed, simply use it in your code with:
 
-
-```php
+```
 	$uuid = \p2made\helpers\Uuid\UuidHelpers::uuid();
 	$uuid = \p2made\helpers\Uuid\UuidHelpers::uuid($subDomain);
 ```
-
-
-
