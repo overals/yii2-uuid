@@ -1,5 +1,5 @@
-P2Uuid v3.0.0+1
-===============
+P2Uuid v3.0.1
+=============
 
 A simple wrapper of [ramsey/uuid](https://github.com/ramsey/uuid) as helpers for Yii 2 Framework.
 
@@ -13,13 +13,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist p2made/yii2-uuid "*"
+php composer.phar require --prefer-dist p2made/yii2-uuid ">=3.0.0"
 ```
 
 or add
 
 ```
-"p2made/yii2-uuid": "*"
+"p2made/yii2-uuid": ">=3.0.0"
 ```
 
 to the require section of your `composer.json` file.

@@ -27,7 +27,7 @@
         "source": "https://github.com/p2made/yii2-uuid"
     },
 
-    "version": "3.0.0+1",
+    "version": "3.0.1",
     "minimum-stability": "dev",
 
     "require": {
