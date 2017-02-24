@@ -1,17 +1,21 @@
 {
-    "name": "p2made/yii2-uuid",
+    "name": "overals/yii2-uuid",
     "description": "A PHP 5.3+ library for generating RFC 4122 version 1, 3, 4, and 5 universally unique identifiers (UUID), wrapped as helpers for Yii 2 Framework.",
     "type": "yii2-extension",
     "keywords": [
         "yii2","extension","uuid", "identifier", "guid"
     ],
-    "homepage": "https://github.com/p2made/yii2-uuid",
+    "homepage": "https://github.com/overals/yii2-uuid",
     "license": "MIT",
     "authors": [
         {
             "name": "Pedro Plowman",
             "email": "p2opensource@gmail.com",
             "homepage": "https://github.com/p2made"
+        },
+        {
+            "name": "Evgeny Gorchak",
+            "email": "evgenygor89@gmail.com"
         },
         {
             "name": "Ben Ramsey",
@@ -23,8 +27,8 @@
         }
     ],
     "support": {
-        "issues": "https://github.com/p2made/yii2-uuid/issues",
-        "source": "https://github.com/p2made/yii2-uuid"
+        "issues": "https://github.com/overals/yii2-uuid/issues",
+        "source": "https://github.com/overals/yii2-uuid"
     },
 
     "version": "3.0.1",
@@ -48,7 +52,7 @@
     },
     "autoload": {
         "psr-4": {
-            "p2made\\helpers\\Uuid\\": ""
+            "overals\\helpers\\Uuid\\": ""
         }
     }
 }
